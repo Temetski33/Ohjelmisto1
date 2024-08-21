@@ -1,3 +1,2 @@
 nimi = input("Kerro nimesi:")
-print("Terve,", nimi,'!', sep='')
-
+print(f'Terve, {nimi}!')
