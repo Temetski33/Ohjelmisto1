@@ -1,3 +1,5 @@
+#Harjoituksen vuoksi loin ohjelman hyväksymään vain kokonaislukuja inputiksi.
+
 while True:
     try:
         yks = int(input("Anna kolme kokonaislukua. Luku yksi:"))
