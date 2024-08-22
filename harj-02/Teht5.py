@@ -1,3 +1,4 @@
+import math
 leiv = input("Anna leiviskät:")
 naul = input("Anna naulat:")
 luot = input("Anna luodit:")
@@ -8,7 +9,9 @@ luot = float(luot)
 
 LuoditYht = 20 * 32 * leiv + 320 * naul + luot
 Grammat = 13.3 * LuoditYht
-Nykymassa = Grammat
+Nykymassa = Grammat / 1000
+Kilomassa = math.trunc(Nykymassa)
+GrammatDesimaali = Grammat % 1000
 
-print(f'Massa grammoina on {Grammat}.')
-print(f'Massa nykymittojen mukaan on {Nykymassa}.')
+print(Grammat)
+print(f"Ja viimein {Kilomassa} kilogrammaa ja {GrammatDesimaali:3.2f} grammaa.")
