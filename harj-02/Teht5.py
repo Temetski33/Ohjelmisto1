@@ -13,5 +13,4 @@ Nykymassa = Grammat / 1000
 Kilomassa = math.trunc(Nykymassa)
 GrammatDesimaali = Grammat % 1000
 
-print(Grammat)
 print(f"Ja viimein {Kilomassa} kilogrammaa ja {GrammatDesimaali:3.2f} grammaa.")
