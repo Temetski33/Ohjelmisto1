@@ -28,6 +28,6 @@ summa = yks + kaks + kolme
 tulo = yks * kaks * kolme
 ka = summa / 3
 
-print(f'Lukujen summa on {summa}.')
-print(f'Lukujen tulo on {tulo}.')
-print(f'Lukujen keskiarvo on {ka}.')
+print(f"Lukujen summa on {summa}.")
+print(f"Lukujen tulo on {tulo}.")
+print(f"Lukujen keskiarvo on {ka}.")

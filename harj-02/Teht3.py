@@ -7,5 +7,5 @@ korkeus = float(korkeus)
 piiri = 2 * kanta + 2 * korkeus
 ala = kanta * korkeus
 
-print(f'Suorakulmion ala on {ala}.')
-print(f'Suorakulmion piiri on {piiri}.')
+print(f"Suorakulmion ala on {ala}.")
+print(f"Suorakulmion piiri on {piiri}.")

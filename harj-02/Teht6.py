@@ -9,5 +9,5 @@ TokaKaks = (random.randint(1, 6))
 TokaKol = (random.randint(1, 6))
 TokaNel = (random.randint(1, 6))
 
-print(f'Kolmenumeroinen koodi on {yks}{kaks}{kolme}.')
-print(f'Nelinumeroinen koodi on {TokaYks}{TokaKaks}{TokaKol}{TokaNel}.')
+print(f"Kolmenumeroinen koodi on {yks}{kaks}{kolme}.")
+print(f"Nelinumeroinen koodi on {TokaYks}{TokaKaks}{TokaKol}{TokaNel}.")
