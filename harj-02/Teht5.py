@@ -7,7 +7,7 @@ leiv = float(leiv)
 naul = float(naul)
 luot = float(luot)
 
-LuoditYht = 20 * 32 * leiv + 320 * naul + luot
+LuoditYht = 20 * 32 * leiv + 32 * naul + luot
 Grammat = 13.3 * LuoditYht
 Nykymassa = Grammat / 1000
 Kilomassa = math.trunc(Nykymassa)
