@@ -15,5 +15,3 @@ elif hytti == "C":
 
 else:
     print(f"Virheellinen hyttiluokka")
-
-#print(f"Testi, hytin luokka on {hytti}.")

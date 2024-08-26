@@ -6,6 +6,3 @@ if alimitta > 0:
 
 else:
     print(f"On komea kuha!")
-
-#print(f"Testi, kuhan mitta {kuha}")
-#print(f"Testi, kuha on alamitasta {alimitta}")

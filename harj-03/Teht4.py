@@ -14,9 +14,3 @@ elif jakoNel == 0:
 
 else:
     print(f"Vuosi ei ole karkausvuosi")
-
-
-"""print(f"test v {vuosi}")
-print(f"test jako {jakoNel}")
-print(f"test jako {jakoSata}")
-print(f"test jako {jakoNelisata}")"""
