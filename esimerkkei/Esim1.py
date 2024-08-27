@@ -36,4 +36,4 @@ while command != "lopeta":
         print(f"Hurrattiin {hooray_counter} kertaa ja kivaa oli!")
 
     else:
-        print("Huono komenta 0/5")
+        print("Huono komento 0/5")
