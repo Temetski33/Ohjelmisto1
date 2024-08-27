@@ -1,7 +1,7 @@
 #Noppailua
-import random
 
 """
+import random
 noppa1 = noppa2 = heitot = 0
 while (noppa1!=6 or noppa2!=6):
     noppa1 = random.randint(1,6)
@@ -11,7 +11,7 @@ while (noppa1!=6 or noppa2!=6):
 print(f"Tarvittiin {heitot:d} heittoa.")
 """
 
-
+import random
 
 toistot = 0
 heitot_yhteensä = 0
