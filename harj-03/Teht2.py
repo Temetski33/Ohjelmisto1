@@ -1,4 +1,4 @@
-hytti = input("Kerro laivan hyttiluokka:")
+hytti = input(f"Kerro laivan hyttiluokka:")
 
 #Toistaiseksi toimii vain jos luokan syöttää isoilla kirjaimilla
 if hytti == "LUX":

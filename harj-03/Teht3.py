@@ -14,10 +14,10 @@ elif sukup == "nainen" and hemo < 117:
     print(f"Hemoglobiiniarvosi on alhainen.")
 
 elif sukup == "nainen" and 117 <= hemo <= 175:
-    print("Hemoglobiiniarvosi on normaali.")
+    print(f"Hemoglobiiniarvosi on normaali.")
 
 elif sukup == "nainen" and hemo > 175:
-    print("Hemoglobiiniarvosi on korkea.")
+    print(f"Hemoglobiiniarvosi on korkea.")
 
 else:
-    print("Virhe tietoja syöttäessä. Syötä uudestaan.")
+    print(f"Virhe tietoja syöttäessä. Syötä uudestaan.")
