@@ -6,7 +6,7 @@ import random
 import math
 
 iterator = 0
-N = 100000
+N = 1000000
 n = 0
 while iterator < N:
     iterator += 1
@@ -18,6 +18,7 @@ while iterator < N:
         print(f"Osui ympyrän sisälle.")
         n += 1
 
+print("\n")
 print(f"{N} pisteestä {n} osui yksikökympyrän sisälle.")
 result = 4 * n / N
 print(f"Piin likiarvo on {result}")
