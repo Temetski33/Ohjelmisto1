@@ -23,6 +23,6 @@ nimet.insert(0, "Uusi eka")
 
 print(nimet)
 
-#tulostetaan listan alkiot kukin omalla rivillään (for... in)
+#tulostetaan listan alkiot kukin omalla rivillään (for... in).
 for alkio in nimet:
     print(alkio)
