@@ -1,5 +1,11 @@
 import random
 
+heittolista = []
+lukum = int(input(f"Anna noppien lukumäärä: "))
 
-heitto = random.randint(1, 6)
-print(f"{heitto}")
+for nro in range(lukum):
+    heitto = random.randint(1, 6)
+    heittolista.append(heitto)
+
+summa = sum(heittolista)
+print(f"Silmälukujen summa on yhteensä {summa}")
