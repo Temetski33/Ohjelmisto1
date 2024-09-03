@@ -1,14 +1,17 @@
+import math
+
 luku = int(input(f"Anna kokonaisluku: "))
 lista = []
-#loppu = luku / 2 + 1
+loppu = luku / 2 + 1
+loppu = int(math.ceil(loppu))
 
-for nro in range(2, luku):
+for nro in range(2, loppu):
     jaannos = luku % nro
-    #print(jaannos)
     lista.append(jaannos)
 
-#print(lista)
-if 0 in lista:
+if luku < 2:
+    print("Luku ei ole alkuluku!")
+elif 0 in lista:
     print("Luku ei ole alkuluku!")
 else:
     print("Luku on alkuluku!")
