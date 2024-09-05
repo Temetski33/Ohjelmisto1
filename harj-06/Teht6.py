@@ -16,7 +16,7 @@ squareprice1 = pizzalaskuri(pizza1d, pizza1e)
 squareprice2 = pizzalaskuri(pizza2d, pizza2e)
 
 #Alla neliöhinnan testailua
-print(f"test p1 {squareprice1:.1f} test p2 {squareprice2:.1f}")
+#print(f"test p1 {squareprice1:.1f} test p2 {squareprice2:.1f}")
 
 if squareprice1 < squareprice2:
     print(f"Pizza 1 antaa paremman vastineen rahalle.")
