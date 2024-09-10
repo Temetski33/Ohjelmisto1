@@ -18,7 +18,7 @@ def print_countries():
     cursor = connection.cursor()
     sql = "SELECT name, iso_country FROM country"
     sql2 = "SELECT name, iso_country FROM country WHERE name='ää'"
-    cursor.execute(sql2)
+    cursor.execute(sql)
     # haetaan vain ensimmäinen (tai seuraava rivi osoittimen kohdalta"
     #result = cursor.fetchone()
     #print(result)
@@ -41,3 +41,12 @@ def print_countries():
         print(f"Maita yhteensä: {cursor.rowcount}")
 
 print_countries()
+
+def add_country(code, name):
+    sql = f"INSERT INTO country VALUES  ('{code}', '{name}', null, null, null)"
+    cursor = connection.cursor()
+    cursor.execute(sql)
+
+country_name = input("Anna lisättävän maan nimi: ")
+country_code = input("Anna lisättävän maan koodi: ")
+add_country(country_code, country_name)
