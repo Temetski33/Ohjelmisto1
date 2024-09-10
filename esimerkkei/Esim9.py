@@ -50,3 +50,5 @@ def add_country(code, name):
 country_name = input("Anna lisättävän maan nimi: ")
 country_code = input("Anna lisättävän maan koodi: ")
 add_country(country_code, country_name)
+
+# nyt meni vähä ylimäärästä tietokantaan emt emt
