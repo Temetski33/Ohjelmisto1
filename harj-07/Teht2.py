@@ -1,4 +1,4 @@
-nimi = "placeholderLOLOLOLOLO"
+nimi = "placeholdernimi"
 nimijoukko = set()
 
 while nimi != "":
