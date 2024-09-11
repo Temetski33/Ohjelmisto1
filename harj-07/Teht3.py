@@ -31,18 +31,18 @@ def valintafunc():
 
     if tulos == 1:
         print(f"Syötetään uusi lentoasema.")
-        """country_name = input("Anna lisättävän maan nimi: ")
+        country_name = input("Anna lisättävän maan nimi: ")
         country_code = input("Anna lisättävän maan koodi: ")
-        add_country(country_code, country_name)"""
+        add_country(country_code, country_name)
     elif tulos == 2:
         print(f"Haetaan aseman tiedot.")
         cursor = connection.cursor()
-        haettukoodi = input(f"Syötä haettavan seman ISAO koodi: ")
+        haettukoodi = input(f"Syötä haettavan seman ICAO koodi: ")
         sql2 = "SELECT name, iso_country FROM country"
         cursor.execute(sql2)
         result = cursor.fetchall()
-        dedelolo = next((i for i, elem in enumerate(result) if elem[1] == haettukoodi), -1)
-        print(result[dedelolo])
+        haettumaa = next((i for i, elem in enumerate(result) if elem[1] == haettukoodi), -1)
+        print(f"Koodiasi vastaava lentoasema on {result[haettumaa][0]}.")
     elif tulos == 3:
         print(f"Lopetetaan ohjelma.")
     return tulos
