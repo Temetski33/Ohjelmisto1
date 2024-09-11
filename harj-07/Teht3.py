@@ -1,7 +1,5 @@
 import mysql.connector
 
-# "tallennetaan" connect-funktion palauttama yhteys muuttujaan
-# jatkokäyttöä varten
 connection = mysql.connector.connect(
          host='127.0.0.1',
          port= 3306,
@@ -9,7 +7,6 @@ connection = mysql.connector.connect(
          user='teemu',
          password='salakala',
          autocommit=True,
-        # tarvitaan uudelle 9.0 versiolle ajurista:
         collation='utf8mb4_general_ci'
          )
 
