@@ -36,6 +36,15 @@ def valintafunc():
         add_country(country_code, country_name)"""
     elif tulos == 2:
         print(f"Haetaan aseman tiedot.")
+        cursor = connection.cursor()
+        haettukoodi = input(f"Syötä haettavan seman ISAO koodi: ")
+        sql2 = "SELECT name, iso_country FROM country"
+        cursor.execute(sql2)
+        result = cursor.fetchall()
+        print(result)
+        dedelolo = next((i for i, elem in enumerate(result) if elem[1] == haettukoodi), -1)
+        print(dedelolo)
+        print(result[dedelolo])
     elif tulos == 3:
         print(f"Lopetetaan ohjelma.")
     return tulos
