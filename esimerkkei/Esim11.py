@@ -1,3 +1,6 @@
+#Hikoiluversio moduulin 7 tehtävästä 3.
+#Tein vähän ylimäärästä duunia ja tää oli vähän eri mitä kysyttiin.
+
 import mysql.connector
 
 connection = mysql.connector.connect(
