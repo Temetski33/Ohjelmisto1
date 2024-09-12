@@ -26,10 +26,7 @@ def valintafunc():
     return tulos
 
 lentoasemat = {}
-print(lentoasemat)
 
 toistokerroin = 1
 while 0 < toistokerroin < 3:
     toistokerroin = valintafunc()
-
-print(lentoasemat)
