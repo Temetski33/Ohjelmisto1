@@ -3,6 +3,18 @@
 
 import mysql.connector
 
+#funktioversio hausta
+"""def get_db_connection():
+    return mysql.connector.connect(
+         host='127.0.0.1',
+         port= 3306,
+         database='flight_game',
+         user='teemu',
+         password='salakala',
+         autocommit=True,
+        collation='utf8mb4_general_ci'
+         )"""
+
 connection = mysql.connector.connect(
          host='127.0.0.1',
          port= 3306,
