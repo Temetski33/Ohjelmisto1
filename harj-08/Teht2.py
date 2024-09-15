@@ -15,7 +15,6 @@ def fetch_airport_by_icao(code):
     cursor = connection.cursor()
     cursor.execute(sql)
     result_row = cursor.fetchall()
-    #print(*result_row, sep = "\n")
     return result_row
 
 user_input = input(f"Anna maakoodi: ")
