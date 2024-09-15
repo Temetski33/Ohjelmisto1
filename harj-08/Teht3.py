@@ -1,5 +1,3 @@
-#select name, latitude_deg, longitude_deg from airport where ident
-
 from geopy import distance
 import mysql.connector
 
@@ -18,7 +16,6 @@ def fetch_airport_by_icao(code):
     cursor = connection.cursor()
     cursor.execute(sql)
     result_row = cursor.fetchone()
-    #print(result_row)
     return result_row
 
 user_input = input(f"Anna ICAO koodi: ")
