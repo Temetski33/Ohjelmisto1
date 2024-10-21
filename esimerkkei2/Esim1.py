@@ -30,3 +30,5 @@ class Kissa:
 ekaKissa = Kissa("Rudolf", 1997)
 # tulostetaan kissan arvoja
 print(f"{ekaKissa.name:s} on kisuli vuosimallia {ekaKissa.age:d}.")
+
+#hauska kommentti lolololo
