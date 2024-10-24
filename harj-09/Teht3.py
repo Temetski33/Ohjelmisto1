@@ -1,3 +1,5 @@
+# Tässä käytännössä kaikki tehtävät 1-3 sisällä.
+
 class Auto:
     def __init__(self, rekkari, huippunopeus):
         self.rekkari = rekkari
@@ -35,7 +37,7 @@ uusiAuto.kiihdyta(-200)
 print(f"Nyt nopeus on {uusiAuto.nopeus:d} km/h!")
 
 uusiAuto.kiihdyta(100)
-uusiAuto.kulje(1.5)
-uusiAuto.kulje(1.5)
-uusiAuto.kulje(1.2)
+uusiAuto.kulje(3)
+uusiAuto.kulje(2)
+uusiAuto.kulje(3)
 print(f"Kuljettu matka on {uusiAuto.matka:f} km.")

@@ -24,28 +24,75 @@ class Kissa:
     kissojenLkm = 0
 
     # luokan alustaja
-    def __init__(self, name, age, aani = "Mjiuu, mjayy"):
+    def __init__(self, name, age, aani = "Mjiuu, mjayy", omistaja =None):
         self.name = name
         self.age = age
-        self.omistaja = "Tuntematon"
+        # omistaja on viittaus Omistaja luokasta luotuun olioon
+        self.omistaja = omistaja
+        # kaytetaan viittausta Omistaja-olioon, ja lisataan nyt luotava
+        # kissa jotain jotain
+        omistaja.lisaa_kissa(self)
         self.aani = aani
         # paivitetaan luokkamuuttujan arvo
         Kissa.kissojenLkm += 1
 
+    # maaritellaan oliolle toiminto eli metodi
     def tervehdi(self):
-        print(self.aani)
+        print(f"\n{self.aani}! Olen {self.name}.")
+        print(f"Olen jo {self.age} vuotta vanha. Omistajani on {self.omistaja.nimi}.")
+
+
+class Omistaja:
+    def __init__(self, nimi, puh="tuntematon"):
+        self.nimi = nimi
+        self.puh = puh
+        self.kissat = []
+
+    def lisaa_kissa(self, kissa):
+        # estetaan saman kissan paatyminen listalle kahteen kertaan
+        for k in self.kissat:
+            if k == kissa:
+                return
+        self.kissat.append(kissa)
+
+    def esittele(self):
+        print(f"Olen {self.nimi}, puh: {self.puh}.")
+        print(f"Omistan kissat:")
+        for cat in self.kissat:
+            print(f"{cat.name}, ikä: {cat.age}")
 
 
 # paaohjelma
+viivi = Omistaja("Viivi Vihanto", "040 1234666")
+
 # luodaan uusi Kissa-tyyppinen olio
-ekaKissa = Kissa("Rudolf", 1997)
-tokaKissa = Kissa("Giga-Rudolf", 1658, "MJUUUUUR MJAYYYYY")
-# tulostetaan kissan arvoja
+ekaKissa = Kissa("Rudolf", 2, omistaja=viivi)
+tokaKissa = Kissa("Giga-Rudolf", 658, "MJUUUUUR MJAYYYYY", viivi)
 
-print(f"{ekaKissa.name:s} on kisuli vuosimallia {ekaKissa.age:d} joka sanoo:")
-ekaKissa.tervehdi()
 
-print(f"{tokaKissa.name:s} on kisuli vuosimallia {tokaKissa.age:d} joka sanoo:")
-tokaKissa.tervehdi()
+"""ekaKissa.tervehdi()
+tokaKissa.tervehdi()"""
 
-print(f"Ja kissojahan on yhteensa {Kissa.kissojenLkm}.")
+# Kissa -luokka tekee jo alla olevan
+"""viivi.lisaa_kissa(ekaKissa)
+viivi.lisaa_kissa(ekaKissa)
+viivi.lisaa_kissa(tokaKissa)"""
+
+viivi.esittele()
+
+# laitetaan kaikki Viiviv kissat esittelemaan itsensa
+for kissa in viivi.kissat:
+    kissa.tervehdi()
+
+
+"""# luodaan 5 kissaa lisaa
+kisulista = []
+for i in range(5):
+    uus_kissa = Kissa(f"Cat name {i}", i, f"Moro {i}")
+    kisulista.append(uus_kissa)
+
+#kaikki uudet kissat tervehtii
+for kisu in kisulista:
+    kisu.tervehdi()"""
+
+print(f"\nJa kissojahan on yhteensa {Kissa.kissojenLkm}.")
