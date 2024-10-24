@@ -5,7 +5,7 @@ class Auto:
         self.rekkari = rekkari
         self.huippunopeus = huippunopeus
         self.nopeus = 0
-        self.matka = 0
+        self.matka = 2000
 
     def kiihdyta(self, muutos):
         self.nopeus = self.nopeus + muutos
@@ -36,8 +36,6 @@ uusiAuto.kiihdyta(-200)
 
 print(f"Nyt nopeus on {uusiAuto.nopeus:d} km/h!")
 
-uusiAuto.kiihdyta(100)
-uusiAuto.kulje(3)
-uusiAuto.kulje(2)
-uusiAuto.kulje(3)
+uusiAuto.kiihdyta(60)
+uusiAuto.kulje(1.5)
 print(f"Kuljettu matka on {uusiAuto.matka:f} km.")
