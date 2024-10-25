@@ -50,6 +50,12 @@ class Talo:
         ajettava_hissi = self.hissilista[hissin_nro - 1]
         ajettava_hissi.siirry_kerrokseen(kohdekerros)
 
+    def palohalytys(self):
+        for hissuli in self.hissilista:
+            hissuli.siirry_kerrokseen(self.alanro)
+
 
 talo1 = Talo(1, 7, 3)
 talo1.aja_hissi(1, 5)
+talo1.aja_hissi(3, 2)
+talo1.palohalytys()
