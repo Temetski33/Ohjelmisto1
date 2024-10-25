@@ -1,4 +1,4 @@
-# Tässä käytännössä kaikki tehtävät 1-3 sisällä.
+# Tässä käytännössä moduulin kaikki tehtävät 1-3.
 
 class Auto:
     def __init__(self, rekkari, huippunopeus):
@@ -9,17 +9,14 @@ class Auto:
 
     def kiihdyta(self, muutos):
         self.nopeus = self.nopeus + muutos
-        if self.nopeus > 142:
-            self.nopeus = 142
+        if self.nopeus > self.huippunopeus:
+            self.nopeus = self.huippunopeus
 
         if self.nopeus < 0:
             self.nopeus = 0
 
     def kulje(self, tunnit):
         self.matka += tunnit * self.nopeus
-        print(self.matka)
-
-
 
 
 uusiAuto = Auto("ABC-123", 142)

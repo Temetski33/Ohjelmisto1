@@ -1,3 +1,5 @@
+# Moduuli 9 Teht 1
+
 class Auto:
     def __init__(self, rekkari, huippunopeus):
         self.rekkari = rekkari

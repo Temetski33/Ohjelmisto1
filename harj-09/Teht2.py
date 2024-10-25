@@ -1,3 +1,5 @@
+# Moduuli 9 Teht 2
+
 class Auto:
     def __init__(self, rekkari, huippunopeus):
         self.rekkari = rekkari
@@ -7,8 +9,8 @@ class Auto:
 
     def kiihdyta(self, muutos):
         self.nopeus = self.nopeus + muutos
-        if self.nopeus > 142:
-            self.nopeus = 142
+        if self.nopeus > self.huippunopeus:
+            self.nopeus = self.huippunopeus
 
         if self.nopeus < 0:
             self.nopeus = 0
