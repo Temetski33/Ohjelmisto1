@@ -6,7 +6,7 @@ class Auto:
     sarja_nro = 1
     autot = []
     matkat = [0]
-    # matkat listan alku-alkio 0 mahdollistaa while loopin toimimisen paaohjelmassa
+    # matkat listan alku-alkio 0 mahdollistaa loopin toimimisen paaohjelmassa
     def __init__(self):
         self.rekkari = f"ABC-{Auto.sarja_nro}"
         self.huippunopeus = random.randint(100, 200)
@@ -19,8 +19,8 @@ class Auto:
         Auto.autot.append(self)
 
     def kiihdyta(self):
-        self.muutos = random.randint(-10, 15)
-        self.nopeus = self.nopeus + self.muutos
+        muutos = random.randint(-10, 15)
+        self.nopeus = self.nopeus + muutos
         if self.nopeus > self.huippunopeus:
             self.nopeus = self.huippunopeus
 
@@ -40,11 +40,11 @@ class Auto:
 
 
 class Kilpailu:
-    kilpailuaika = 0
-    def __init__(self, kilpailunNimi, kilpailuKm, kipailuAutot):
-        self.nimi = kilpailunNimi
-        self.matka = kilpailuKm
-        self.kisaajat = kipailuAutot
+    def __init__(self, kilpailunimi, kilpailukm, kipailuautot):
+        self.nimi = kilpailunimi
+        self.matka = kilpailukm
+        self.kisaajat = kipailuautot
+        self.kilpailuaika = 0
 
     def tunti_kuluu(self):
         for automobiili in self.kisaajat:
@@ -53,9 +53,9 @@ class Kilpailu:
         for automobiili in self.kisaajat:
             automobiili.kulje(1)
 
-        Kilpailu.kilpailuaika += 1
+        self.kilpailuaika += 1
 
-        if Kilpailu.kilpailuaika % 10 == 0:
+        if self.kilpailuaika % 10 == 0:
             self.tulosta_tilanne()
 
     def tulosta_tilanne(self):
@@ -69,25 +69,18 @@ class Kilpailu:
         if Auto.matkat[0] >= self.matka:
             return True
 
+    def aloita_kilpailu(self):
+        print(f"{self.nimi} alkakoon!")
+        while not Kilpailu.kilpailu_ohi(self):
+            self.tunti_kuluu()
+        self.tulosta_tilanne()
+
 
 # main ohjelma
-"""for i in range(2):
-    uusiAuto = Auto()
-
-while Auto.matkat[0] < 1000:
-    for auto in Auto.autot:
-        auto.kiihdyta()
-
-    for auto in Auto.autot:
-        auto.kulje(1)
-
-for auto in Auto.autot:
-        auto.tulosta()"""
-
 for i in range(10):
     uusiAuto = Auto()
 
-suuri_Autolista = Auto.autot
+suuri_autolista = Auto.autot
 
-Kilpailu("Suuri romuralli", 8000, suuri_Autolista)
-
+kilpailu1 = Kilpailu("Suuri romuralli", 8000, suuri_autolista)
+kilpailu1.aloita_kilpailu()
