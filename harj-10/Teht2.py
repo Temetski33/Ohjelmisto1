@@ -51,14 +51,6 @@ class Talo:
         ajettava_hissi.siirry_kerrokseen(kohdekerros)
 
 
-"""hissi = Hissi(1, 9)
-hissi.siirry_kerrokseen(89)
-hissi.siirry_kerrokseen(7)
-hissi.siirry_kerrokseen(6)
-hissi.siirry_kerrokseen(7)
-hissi.siirry_kerrokseen(9)
-hissi.kerros_ylos()
-hissi.kerros_alas()"""
-
 talo1 = Talo(1, 7, 3)
 talo1.aja_hissi(1, 5)
+talo1.aja_hissi(2, 3)

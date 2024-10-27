@@ -1,7 +1,5 @@
 # Moduuli 10 teht 1
 
-import random
-
 class Hissi:
     def __init__(self, alin_kerros, ylin_kerros):
         self.alin = alin_kerros

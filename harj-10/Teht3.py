@@ -1,3 +1,4 @@
+# Periaatteessa kaikki tehtävät 1-3 tässä
 # Moduuli 10 teht 3
 
 class Hissi:
@@ -51,6 +52,7 @@ class Talo:
         ajettava_hissi.siirry_kerrokseen(kohdekerros)
 
     def palohalytys(self):
+        print("Tulipalo! Tulipalo!")
         for hissuli in self.hissilista:
             hissuli.siirry_kerrokseen(self.alanro)
 

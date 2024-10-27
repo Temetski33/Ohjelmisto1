@@ -6,7 +6,7 @@ class Auto:
     sarja_nro = 1
     autot = []
     matkat = [0]
-    # matkat listan alku-alkio 0 mahdollistaa loopin toimimisen paaohjelmassa
+    # matkat listan alku-alkio 0 mahdollistaa loopin toimimisen pääohjelmassa
     def __init__(self):
         self.rekkari = f"ABC-{Auto.sarja_nro}"
         self.huippunopeus = random.randint(100, 200)
@@ -73,10 +73,11 @@ class Kilpailu:
         print(f"{self.nimi} alkakoon!")
         while not Kilpailu.kilpailu_ohi(self):
             self.tunti_kuluu()
+        print(f"\nKipailu ohi!")
         self.tulosta_tilanne()
 
 
-# main ohjelma
+# pääohjelma
 for i in range(10):
     uusiAuto = Auto()
 
