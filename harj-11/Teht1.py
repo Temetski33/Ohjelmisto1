@@ -27,6 +27,6 @@ class Lehti(Julkaisu):
 
 # main
 aku = Lehti("Aku Ankka", "Aki Hyyppa")
-hytti = Kirja("Hytti nro 6", "Rosa Liksom", 200)
+hytti = Kirja("Hytti n:o 6", "Rosa Liksom", 200)
 aku.tulosta_tiedot()
 hytti.tulosta_tiedot()
