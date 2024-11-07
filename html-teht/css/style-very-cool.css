@@ -45,9 +45,7 @@ nav {
     display: inline;
 }
 
-#companyimage{
-    height: 20rem;
-}
+
 
 ul {
     width: 100%;
@@ -95,7 +93,7 @@ h2 {
 }
 
 article {
-    background-color: #939393;
+    background-color: #e5e0e0;
     width: calc(100% / 3);
     padding: 1rem;
     box-sizing: border-box;
@@ -118,7 +116,7 @@ img {
 
 figcaption{
     padding: 0.2rem;
-    color: rgba(0, 0, 0, 0.58);
+    color: rgba(0, 0, 0, 0.68);
     font-size: 0.875em;
 }
 
