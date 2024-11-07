@@ -1,0 +1,130 @@
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #9c9cac;
+}
+
+html {
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
+header {
+    background-color: #939393;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+div p.intro{
+    text-align: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+nav {
+    background-color: #b0aaaa;
+    position: fixed;
+    width: 80%;
+    height: 3rem;
+    display: flex;
+}
+
+#logoimage{
+    height: 3rem;
+    width: 7rem;
+}
+
+#logoimage img{
+    height: 100%;
+    width: auto;
+    display: inline;
+}
+
+#companyimage{
+    height: 20rem;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    background-color: #b0aaaa;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    background-color: #b0aaaa;
+    color: black;
+    width: 10rem;
+    height: 3rem;
+    display: block;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8d8c8c;
+}
+
+
+main {
+    background-color: #9c9cac;
+    padding: 1rem;
+    display: flex;
+}
+
+section {
+    background-color: #9c9cac;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+article {
+    background-color: #939393;
+    width: calc(100% / 3);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+figure {
+    float: left;
+    margin: 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: auto;
+}
+
+figcaption{
+    padding: 0.2rem;
+    color: rgba(0, 0, 0, 0.58);
+    font-size: 0.875em;
+}
+
+footer {
+    background-color: #9c9cac;
+    padding: 1rem;
+    display: flex;
+    padding-bottom: 10rem;
+}
