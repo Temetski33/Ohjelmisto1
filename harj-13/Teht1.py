@@ -1,4 +1,4 @@
-#Mod 13 teht 1
+#Mod 13 teht 1 tuntiesim juttuja
 
 import json
 from flask import Flask, request, Response
