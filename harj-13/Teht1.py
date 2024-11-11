@@ -21,13 +21,10 @@ def onko_alkuluku(luku):
             on_alku = False
             break
 
-    # tulostetaan saadut vastaukset web-sivulle
     vastaus = {
         "Number": luku,
         "isPrime": on_alku
     }
-
-    # palautetaan vastaus web-sivulle
     return vastaus
 
 if __name__ == '__main__':
